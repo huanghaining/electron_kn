@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>迅雷快鸟</title>
+    <style type="text/css">
+    
+    body{
+        background-color: darkcyan
+    }
+    #top{
+        margin-left: 0%;
+        height: 120px;
+        width: 100%;
+        background-color: cadetblue
+    }
+    #main{
+        height: 400px;
+        width: 100%;
+        background-color: darkgreen
+    }
+    #bottom{
+        height: 80px;
+        width: 100%;
+        background-color: darkslategray
+    }
+    </style>
+</head>
+<body>
+    <script >
+        var x=document.getElementById("textedit");
+
+        function getLocation()
+        {
+            window.alert('error')
+            console.log('getLocation enter')
+            if (navigator.geolocation)
+            {
+                window.alert('error111')
+                navigator.geolocation.getCurrentPosition(showPosition,errorCallBack);
+            }
+            else
+            {
+                window.alert('error22')
+                x.value="该浏览器不支持获取地理位置。";
+            }
+        }
+
+        function errorCallBack(params) {
+            window.alert('get position error')  
+        }
+       
+        function showPosition(position)
+        {
+            window.alert('get position success') 
+            value="纬度: " + position.coords.latitude + 
+            "<br>经度: " + position.coords.longitude; 
+            window.alert(value)   
+        }
+
+       function getName() {
+        document.getElementById('textedit').value= 'hello world'
+        
+       }
+    </script>
+    <div id="top">
+        main top
+        <button type="button" onclick="getLocation()">获取当前位置</button>
+        <button type="button" onclick="getName()" >get name</button>
+    </div>
+    <div id="main">
+        main content space
+        <textarea id="textedit"></textarea>
+    </div>
+    <div id="bottom">
+        main bottom
+    </div>
+</body>
+
+
