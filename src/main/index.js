@@ -3,8 +3,11 @@ var path = require('path')
 let win;
 
 let windowConfig = {
-    width:400,
-    height:600
+    width:360,
+    height:550,
+    resizable:false,
+    maximizable:false,
+    show:false,
 }
 
 function createWindow() {
@@ -18,10 +21,16 @@ function createWindow() {
       })
     // console.log(url)
     win.loadURL(url)
+
+    win.once('ready-to-show', () => {
+        win.show()
+      })
+
     // win.webContents.openDevTools();
     win.on('close',()=>{
         win = null
     });
+    
     // win.on('resize',()=>{
     //     win.reload()
     // })

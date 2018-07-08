@@ -1,0 +1,156 @@
+
+body{
+   /* background-image: '../images/mianwin/main.bkg.png'; */
+   
+   background-color: aquamarine;
+   background-position-x: 0%;
+   background-repeat: no-repeat;
+   margin-left: 0%;
+   margin-top: 0%;
+    margin-right: 0%;
+    background-color: white;
+}
+
+#unloginimg{
+    position: relative;
+}
+
+#top{
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-right: 0%;
+    height: 80px;
+    width: 100%;
+    background-color: cadetblue
+}
+#main{
+    height: 470px;
+    width: 100%;
+    overflow: visible;
+    background-image: url('../images/mianwin/main.bkg.png');
+    /* background-color: darkgreen */
+}
+#bottom{
+    position: relative;
+    height: 20px;
+    width: 100%;
+    overflow: visible;
+    /* background-color:white; */
+    /* vertical-align: -webkit-baseline-middle; */
+}
+
+#anipanel{
+    position: relative;
+    top: -20px;
+    left: 0px; 
+    height: 320px;
+    width: 100%;
+    background-image: url('../images/anipanel/bitmap.anipanel.bottom.png'),url('../images/anipanel/bitmap.anipanel.rule.png'),
+                        url('../images/anipanel/bitmap.anipanel.outcicle5.png'),url('../images/anipanel/bitmap.anipanel.outcicle4.png'),
+                        url('../images/anipanel/bitmap.anipanel.incicle1.png'),url('../images/anipanel/bitmap.anipanel.incicle2.png');
+}
+
+#canvas{
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+/* 
+#pointer{
+    position: relative;
+    top: 95px;
+    left: -20px;
+    transform: rotate(90deg)
+} */
+
+.clocks {
+    height: 500px;
+    margin: 25px auto;
+    position: relative;
+    width: 500px;
+  }
+
+#tab{
+    width: 400px;
+    height: 20px;
+    
+    /*处理超出的内容*/
+    /* overflow: hidden; */
+}
+
+
+ 
+/*选项卡的头部*/
+#tab-header{
+    /* background-color: #F7F7F7; */
+    height: 20px;
+    text-align: center;
+    position: relative;
+}
+#tab-header ul{
+    width: 400px;
+    position: absolute;
+    left: -1px;
+}
+#tab-header ul li{
+    float: left;
+    width: 120px;
+    list-style-type: none;
+    /* height: 33px; */
+    /* line-height: 33px; */
+    padding-left: 30px;
+}
+
+#tab-header ul li.selected{
+    font-weight: bolder;
+    color:blue;
+    /* padding-right: 0px; */
+    text-decoration-color: lightskyblue;
+}
+ 
+#tab-header ul li:hover{
+    color: orangered;
+}
+ 
+
+ #pointer{     
+    width:280px;     
+    height: 280px;
+    position: relative;
+    left: 35px;  
+    top: 93px;   
+    /* background:  no-repeat;      */
+    background-image: url("../images/anipanel/bitmap.anipanel.pointer.png") ;
+    border-color:red;
+    border-radius:100px;     
+    /* border-bottom-style: solid; */
+    border-style: solid;
+    /* border-width: 5px; */
+    -webkit-animation:run 2s linear 0s  ;
+    animation-fill-mode:forwards;     
+}     
+@-webkit-keyframes run{     
+    from{     
+        -webkit-transform:rotate(0deg);     
+    }     
+    to{     
+        -webkit-transform:rotate(239deg);     
+    }     
+}  
+
+/*主要内容*/
+#main .tab-content{
+    display: none;
+}
+ 
+/* #tab-content .dom ul li{
+    float: left;
+    /*background-color: red;*/
+    /* margin: 15px 10px;
+    width: 225px;
+} */
+ 
+/* #tab-content .dom ul li a:hover{
+    color: orange;
+}  */
+

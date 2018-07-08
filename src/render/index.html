@@ -6,46 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>迅雷快鸟</title>
-    <style type="text/css">
-    
-    body{
-       
-        background-color: darkcyan
-    }
-    #top{
-        margin-left: 0%;
-        height: 120px;
-        width: 100%;
-        background-color: cadetblue
-    }
-    #main{
-        height: 400px;
-        width: 100%;
-        background-color: darkgreen
-    }
-    #bottom{
-        height: 80px;
-        width: 100%;
-        background-color: darkslategray
-    }
-    </style>
-</head>
-<body>
-    <script src="../main/common.js" >
+    <script src="../main/community.js" >
      
     </script>
-    <div id="top">
-        main top
-        <button type="button" onclick="getLocation()">获取当前位置</button>
-        <button type="button" onclick="getName()" >get name</button>
-    </div>
-    <div id="main">
-        main content space
-        <textarea id="textedit"></textarea>
-    </div>
-    <div id="bottom">
-        main bottom
-    </div>
+     <script src="../main/common.js" >
+     
+     </script>
+     <script src="../main/anipanel.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/mainwin.css">
+</head>
+<body >
+   
+
+    
+        
+        <div id="main">
+
+                main top
+                <img onclick="login()" src="./images/mianwin/header.unlogin.png" id="unloginimg"  >
+            <div id="knspeed" class="tab-content" style="display: block">
+                this is kn tab
+                <div id="anipanel">
+                    
+                    
+                    <div id="pointer">
+
+                    </div>
+                    <!-- <div>100M</div>
+                    <div>100M</div>
+                    <div>100M</div>
+                    <div>100M</div> -->
+                </div> 
+                <!-- <div id="anipanel" class="clocks">
+                    <canvas id="canvas" ></canvas>
+                </div> -->
+            </div>
+            <div id="sxspeed" class="tab-content">
+                this is sx tab
+            </div>
+        </div>
+       
+        <div id="bottom">
+                <div id="tab" >
+                   
+                <!--选项的头部-->
+                    <div id="tab-header">
+                        <ul>
+                            <li class="selected">快鸟提速</li>
+                            <li>上行提速</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+           
+           
+     
+
+    
+    
 </body>
 
 
