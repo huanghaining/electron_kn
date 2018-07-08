@@ -134,3 +134,9 @@ function drawAnipanel() {
 
     setInterval(drawScene, 1000); // loop drawScene
 }
+
+
+function playAnimation() {
+    pointer = document.getElementById('pointer');
+    pointer.style.animationPlayState = 'running';
+}
