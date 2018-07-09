@@ -138,5 +138,7 @@ function drawAnipanel() {
 
 function playAnimation() {
     pointer = document.getElementById('pointer');
+    rule1 = document.getElementById('rule1')
+    rule1.value = '10M';
     pointer.style.animationPlayState = 'running';
 }

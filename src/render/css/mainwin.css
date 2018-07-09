@@ -50,6 +50,54 @@ body{
                         url('../images/anipanel/bitmap.anipanel.incicle1.png'),url('../images/anipanel/bitmap.anipanel.incicle2.png');
 }
 
+#pointer{     
+    width:280px;     
+    height: 280px;
+    position: relative;
+    left: 35px;  
+    top: 94px;   
+    /* background:  no-repeat;      */
+    background-image: url("../images/anipanel/bitmap.anipanel.pointer.png") ;
+    border-color:red;
+    border-radius:100px;     
+    /* border-bottom-style: solid; */
+    /* border-style: solid; */
+    /* border-width: 5px; */
+    -webkit-animation:run 4s linear 0s  ;
+    -webkit-animation-play-state: paused;
+    animation-fill-mode:forwards;     
+}    
+
+#rule1{
+    position: relative;
+    left: 90px;
+    top: 0px;
+}
+
+#rule2{
+    position: relative;
+    left: 85px;
+    top: -130px;
+}
+
+#rule3{
+    position: relative;
+    left: 160px;
+    top: -190px;
+}
+
+#rule4{
+    position: relative;
+    left: 230px;
+    top: -160px;
+}
+
+#rule5{
+    position: relative;
+    left: 230px;
+    top: -70px;
+}
+
 #canvas{
     position: relative;
     height: 400px;
@@ -113,23 +161,7 @@ body{
 }
  
 
- #pointer{     
-    width:280px;     
-    height: 280px;
-    position: relative;
-    left: 35px;  
-    top: 94px;   
-    /* background:  no-repeat;      */
-    background-image: url("../images/anipanel/bitmap.anipanel.pointer.png") ;
-    border-color:red;
-    border-radius:100px;     
-    /* border-bottom-style: solid; */
-    /* border-style: solid; */
-    /* border-width: 5px; */
-    -webkit-animation:run 4s linear 0s  ;
-    -webkit-animation-play-state: paused;
-    /* animation-fill-mode:forwards;      */
-}     
+ 
 
 #pointer:hover{
     transform:rotate(7deg);

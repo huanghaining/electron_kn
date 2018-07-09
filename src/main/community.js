@@ -10,7 +10,7 @@ function $(id){
 // 当页面加载完毕
 window.onload = function(){
     // drawAnipanel()
-    // playAnimation()
+    playAnimation()
     // 拿到所有的标题(li标签) 和 标题对应的内容(div)
     var titles = $('tab-header').getElementsByTagName('li');
     var divs = $('main').getElementsByClassName('tab-content ');
